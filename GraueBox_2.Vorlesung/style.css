@@ -1,0 +1,67 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+margin:0
+}
+
+#wrapper{
+    width: 800px;
+    margin: auto;
+}
+
+header,aside,main,footer {
+    background-color: gray;
+    margin: 10px;
+}
+
+#logo {
+    background-color:palevioletred;
+    height: 20px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+header {
+    padding: 10px;
+    height: 80px;
+}
+
+article,nav{
+    background-color: lightsteelblue;
+}
+
+nav{
+    height: 20px;
+    width: 100%;
+}
+
+article {
+    height: 60px;
+    width: 30%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    float: left;
+}
+
+main{
+    height:300px;
+    padding: 10px;
+    width: 80%;
+    display: inline-block;
+}
+
+aside {
+    height: 300px;
+    width: 16.5%;
+    display: inline-block;
+}
+
+
+
+footer{
+    height: 80px;
+    border: 10px dashed rgb(240, 129, 151);
+}
