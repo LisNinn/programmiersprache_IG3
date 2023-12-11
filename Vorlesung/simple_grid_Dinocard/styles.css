@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #222;
+}
+
+#card-wrapper {
+    background-color: aqua;
+    display: grid;
+    grid-template-columns:repeat( 4, 1fr);
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-areas:
+     "nr name name name"
+     "image image image image"
+     "stats stats stats stats";
+    width: 200px;
+    height: 300px;
+   
+}
+
+.number{
+    grid-area: nr;
+}
+
+.title{
+    grid-area: name;
+}
+
+.image-container{
+    grid-area: image;
+}
+
+.image-container img{
+   max-width: 100%;
+}
+
+.stats-box{
+    grid-area: stats;
+}
+
+.round{
+    background-color: bisque;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+}

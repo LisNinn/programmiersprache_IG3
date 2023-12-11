@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+
+#grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 50px 300px 60px;
+    grid-template-areas:
+     "hdr"
+     "sidebar"
+     "content"
+     "ftr";
+    width: 600px;
+    height: 200px;
+    background-color: rgb(106, 255, 0);
+}
+
+header{
+    background-color: aquamarine;
+    grid-area: hdr;
+}
+
+nav{
+    background-color: bisque;
+    grid-area: sidebar;
+    font-family: 'Playpen Sans', cursive;
+}
+
+main{
+    background-color: brown;
+    grid-area: content;
+}
+
+footer {
+    background-color: blueviolet;
+    grid-area: ftr;
+}
+
+@media screen and (min-width:768px){
+
+  /*   Desktop-Ansicht */
+    #grid-wrapper {
+        display: grid;
+        grid-template-columns: 100px 300px;
+        grid-template-rows: 50px 300px 60px;
+        grid-template-areas:
+         "hdr hdr"
+         "sidebar content"
+         "ftr ftr";
+        width: 600px;
+        height: 200px;
+        background-color: rgba(255, 0, 183, 0);
+    }
+}
