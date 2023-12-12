@@ -35,20 +35,20 @@
     let isOverlapping;
 
     do {
-      newItem = getRandomPosition(40); // Assuming a default size of 40 for both trees and seas
+      newItem = getRandomPosition(40); 
       isOverlapping = items.some(item => isOverlap(item, newItem, 40));
     } while (isOverlapping);
 
     items.push({ ...newItem, type: 'tree' });
   }
 
-  // Generate seas with larger random sizes
+  
   for (let i = 0; i < seaCount; i++) {
     let newItem;
     let isOverlapping;
 
     do {
-      const size = getRandomSize(20, 60); // Random size between 20 and 60 pixels
+      const size = getRandomSize(20, 60); 
       newItem = { ...getRandomPosition(size), size, type: 'sea' };
       isOverlapping = items.some(item => isOverlap(item, newItem, size));
     } while (isOverlapping);
@@ -70,6 +70,6 @@
 <style>
   .forest {
     position: relative;
-    background-color: #8db580; /* Adjust the background color of the forest */
+    background-color: #92ac8a; 
   }
 </style>
